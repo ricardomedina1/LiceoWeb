@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    background: black;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+}
+
+
+.sidebar ul i a{
+    display: block;
+    color: darkred;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 18px ;
+    transition: 0.3s;
+}
+.sidebar a i{
+    margin-right: 34px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+/*  
+.sidebar ul i{
+    display: inline;
+    margin: 0 15px;
+}
+*/
+
+.sidebar ul i a:hover{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .sidebar{
+        width: 200px;
+        height: 100vh;
+        background: lightpink;
+        padding: 15px;
+        text-align: center;
+        position: fixed;
+        top: 0%;
+    }
+
+}
+
+
+

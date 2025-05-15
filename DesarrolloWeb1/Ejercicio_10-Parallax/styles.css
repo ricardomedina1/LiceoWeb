@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #05001f, #10002b, #220043);
+    color: white;
+}
+
+/* --- Efecto Parallax --- */
+.parallax {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax1 { background-image: url('https://images.pexels.com/photos/4834695/pexels-photo-4834695.jpeg'); }
+.parallax2 { background-image: url('https://images.pexels.com/photos/4834695/pexels-photo-4834695.jpeg'); }
+.parallax3 { background-image: url('https://images.pexels.com/photos/4834695/pexels-photo-4834695.jpeg'); }
+
+.content {
+    padding: 50px;
+    font-size: 18px;
+}
+
+.color1 { background-color: #240046; }
+.color2 { background-color: #3c096c; }
+.color3 { background-color: #5a189a; }
+
+/* --- Barra de Navegación --- */
+.nav-bar {
+    background: linear-gradient(to right, #240046, #5a189a, #9d4edd);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 0 15px rgba(157, 78, 221, 0.7);
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-bar ul li {
+    display: inline;
+}
+
+.nav-bar ul li a {
+    color: cyan;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Subrayado animado */
+.nav-bar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: cyan;
+    box-shadow: 0 0 8px cyan;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-bar ul li a:hover {
+    color: #ff00ff;
+}
+
+.nav-bar ul li a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 719px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 120px;
+        height: 100vh;
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        text-align: left;
+        padding-top: 50px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-bar ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-bar ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+}

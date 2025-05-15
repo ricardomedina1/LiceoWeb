@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(254, 255, 255);
+    font-family: Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#box1 {
+    background-color: lightblue;
+}
+
+#box2 {
+    background-color: lightcoral;
+}
+
+#box3 {
+    background-color: lightgreen;
+}
+
+#box4 {
+    background-color: lightsalmon;
+}
+
+#box5 {
+    background-color: lightpink;
+}
+
+#box6 {
+    background-color: lightgoldenrodyellow;
+}
+
+#box7 {
+    background-color: lightseagreen;
+}
+
+#box8 {
+    background-color: lightsteelblue;
+}
+
+.box {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+    border: 4px double #333;
+
+}

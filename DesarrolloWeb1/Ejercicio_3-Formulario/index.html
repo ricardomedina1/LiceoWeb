@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario En html</title>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1> creacion de formularios html</h1>
+            <hr>
+        </header>
+        <form action="#" method="post">
+            <fieldset>
+                <legend> Formulario de Registro</legend>
+                <!-- campo de texto -->
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                <br>
+                <!-- campo de contrasenia -->
+                <label for="password">Contrasenia</label>
+                <imput type="password" id="password" name="password" requiered>
+                    <br>
+                    <!--campo del correo -->
+                    <label for=email>Correo Electronico:</label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+                    <br>
+                    <!-- campo de numerico -->
+                    <label for=" edad ">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1" max="100">
+                    <br>
+                    <!--selector de fehca -->
+                    <label for="color">selecciona tu color favorito</label>
+                    <input type="color" id="color" name="color">
+                    <br>
+                    <!-- selector de archivos -->
+                    <label for="archivo">sube un archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+                    <br>
+                    <!-- selector de radio (una sola opcion) -->
+                    <p>Genero:</p>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <br>
+                    <!-- selector de checkbox (varias opciones) -->
+                    <p>Hobbies:</p>
+                    <input type="checkbox" id="deportes" name="hobby" value="deporte">
+                    <label for="deportes">Deporte</label>
+                    <input type="checkbox" id="musica" name="hobby" value="musica">
+                    <label for="musica">Musica</label>
+                    <input type="checkbox" id="lectura" name="hobby" value="lectura">
+                    <label for="lectura">Lectura</label>
+                    <br>
+                    <!--lista plegable -->
+                    <label for="Pais">Seleciona tu pais:</label>
+                    <select id="pais" name="pais">
+                        <option value="Honduras">Honduras</option>
+                        <option value="Mexcio">Mexico</option>
+                        <option value="España">España</option>
+                        <option value="eru">Peru</option>
+                    </select>
+                    <br>
+                    <!-- area de texto -->
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" cols="40"
+                        placeholder="Escribe tu  mensaje"></textarea>
+                    <br>
+                    <!-- boton de envio -->
+                    <button type="sumbit">Enviar</button>
+            </fieldset>
+        </form>
+        <footer>
+            <hr>
+            Derechos reservados &copy; 2025
+        </footer>
+    </center>
+</body>
+
+</html>
