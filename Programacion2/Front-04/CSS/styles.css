@@ -1,0 +1,141 @@
+body {
+    background-color: #393c3f;
+    font-family: Arial, sans-serif;
+    color: #050505;
+    text-align: center;
+}
+
+/* header { 
+    background-color: #5b5959;
+    padding: 15px;
+}
+*/
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url("https://images.pexels.com/photos/4427611/pexels-photo-4427611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.card {
+    grid: 20px;
+    width: 400px;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
+}
+
+/* Alinear en fila */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.container, .container2 {
+    width: 400px;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
+    flex-grow: 1; 
+    min-width: 300px; 
+    max-width: 400px; 
+}
+
+.container2 {
+    margin-left: 20px;
+    grid: 20px;
+    margin-top: 20px; 
+}
+
+
+@media (max-width: 1024px) {
+    .container, .container2 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .container2 {
+        width: 100%;
+    }
+}
+
+h1, h2 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+form {
+    text-align: left;
+}
+
+label, input, textarea, button {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #575757;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #bfbfc2;
+}
+
+/* --- Efecto Parallax --- */
+.parallax {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(86, 85, 85);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.parallax1 { background-image: url('https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg'); }
+.parallax2 { background-image: url('https://images.pexels.com/photos/4427624/pexels-photo-4427624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); }
+.parallax3 { background-image: url('https://images.pexels.com/photos/4427551/pexels-photo-4427551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); }
+.parallax4 { background-image: url('https://images.pexels.com/photos/4427627/pexels-photo-4427627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); }
